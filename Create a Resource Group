@@ -1,0 +1,15 @@
+#Create a resource group
+
+#azurerm_resource_group = creating a resource group
+#my_example_resource_group = name of the resource group
+
+ resource "azurerm_resource_group" "my_example_resource_group" {
+    name     = "my_example_resource_group"
+    location = "eastus"
+
+    tags = {
+        environment = "Terraform Lab"
+    }
+}
+
+
